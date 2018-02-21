@@ -1,0 +1,6 @@
+nrc_example_module.example_form:
+  title: ‘NRC Example Form'
+  description: 'Show the example form we have created.'
+  route_name: nrc_example.nrc_example_form
+  parent: 'system.admin_config_development'
+
