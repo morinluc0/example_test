@@ -1,0 +1,7 @@
+nrc_example.nrc_example_form:
+  path: '/nrc_example_form'
+  defaults:
+    _form: '\Drupal\nrc_example\Form\NRCExampleForm'
+    _title: 'NRC Example Module Form'
+  requirements:
+    _permission: 'administer site configuration'
