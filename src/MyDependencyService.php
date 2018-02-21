@@ -7,7 +7,6 @@ use Drupal\Core\Entity\EntityManageInterface;
 /**
  * Service for NRC example.
  */
-
 class MyDependencyService {
   
   protected entity_manage;
