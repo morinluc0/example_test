@@ -2,3 +2,13 @@ services:
   nrc_example.my_service:
     class: Drupal\nrc_example\MyService
     arguments: ['Hello World']
+  nrc_example.my_dependency_service:
+   class: Drupal\nrc_example\MyDependencyService
+   arguments: ['@entity_type.manager']
+  cache.nrc_bin:
+    class: Drupal\Core\Cache\CacheBackendInterface
+    tags:
+      - { name: cache.bin }
+    factory: cache_factory:get
+    arguments: [nrc_bin]
+
