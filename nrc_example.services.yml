@@ -3,8 +3,8 @@ services:
     class: Drupal\nrc_example\MyService
     arguments: ['Hello World']
   nrc_example.my_dependency_service:
-   class: Drupal\nrc_example\MyDependencyService
-   arguments: ['@entity_type.manager']
+    class: Drupal\nrc_example\MyDependencyService
+    arguments: ['@entity_type.manager']
   cache.nrc_bin:
     class: Drupal\Core\Cache\CacheBackendInterface
     tags:
