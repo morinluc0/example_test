@@ -5,10 +5,10 @@ services:
   nrc_example.my_dependency_service:
     class: Drupal\nrc_example\MyDependencyService
     arguments: ['@entity_type.manager']
-  cache.nrc_bin:
+  cache.nrc_cache:
     class: Drupal\Core\Cache\CacheBackendInterface
     tags:
       - { name: cache.bin }
     factory: cache_factory:get
-    arguments: [nrc_bin]
+    arguments: [nrc_cache]
 
