@@ -19,4 +19,15 @@ class NRCExampleBlock extends BlockBase {
       '#markup' => $this->t('Hello NRC'),
     );
   }
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form['nrc_text'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('NRC text'),
+      '#default_value' => $this->configuration['nrc_text'];
+    ];
+    return $form;
+ }
+ public function blockSubmit($form, FormStateInterface $form_state) {
+    $this->configuration['nrc_text'] = $form_state->getValue('nrc_text');
+ }
 }
