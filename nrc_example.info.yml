@@ -1,0 +1,5 @@
+name: NRC example
+description: 'NRC Example module'
+package: NRC
+core: 8.x
+type: module

@@ -1,0 +1,4 @@
+services:
+  nrc_example.my_service:
+    class: Drupal\nrc_example\MyService
+    arguments: ['Hello World']
